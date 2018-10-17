@@ -1,0 +1,557 @@
+@font-face {
+  font-family: UbuntuBold;
+  src: url("../fonts/Ubuntu-B.ttf"); }
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu-R.ttf"); }
+
+@font-face {
+  font-family: UbuntuLight;
+  src: url("../fonts/Ubuntu-L.ttf"); }
+
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url("../fonts/ProximaNova-Light.ttf"); }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: white; }
+
+.webinar-page {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.webinar-banner-page {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative; }
+
+.webinar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px; }
+
+.header-logo {
+  position: relative;
+  z-index: 2; }
+
+.phone-and-button {
+  display: flex;
+  align-items: center; }
+  .phone-and-button .call-button {
+    padding: 15px 35px;
+    background-color: #df362f;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 20px; }
+  .phone-and-button .contact-phone {
+    margin-right: 30px;
+    text-decoration: none;
+    font-family: UbuntuBold;
+    font-size: 30px;
+    color: black;
+    /*a::before 
+	{
+		content: url("../img/call.svg");
+		margin-right: 7px;
+	}*/ }
+  .phone-and-button .phone-img {
+    vertical-align: middle;
+    margin-right: 9px; }
+
+.hidden-phone {
+  display: none; }
+
+.webinar-phone {
+  display: flex;
+  align-items: center; }
+
+.webinar-nav-menu {
+  background-color: #AF4845; }
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none; }
+  .nav-links li {
+    /*display: inline-table;*/
+    text-align: center;
+    margin: 0; }
+    .nav-links li a {
+      padding: 15px 30px;
+      display: block;
+      text-decoration: none;
+      font-family: ubuntu;
+      font-size: 18px;
+      color: white; }
+    .nav-links li a:hover {
+      background-color: #DF362F; }
+
+.webinar-banner-background {
+  background-color: #D68685;
+  background: url("../img/banner-webinar.png");
+  background-size: cover;
+  padding-top: 59px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  margin-bottom: 42px;
+  text-align: center; }
+  .webinar-banner-background p {
+    font-family: Ubuntu;
+    font-size: 30px;
+    color: white;
+    margin: 25px 0; }
+  .webinar-banner-background .banner-date {
+    font-size: 35px;
+    margin: 50px 0; }
+  .webinar-banner-background h1 {
+    font-family: UbuntuBold;
+    color: white;
+    font-size: 58px; }
+  .webinar-banner-background .webinar-banner-smalltext {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 84px; }
+
+.banner-down {
+  text-decoration: none;
+  color: white;
+  font-family: Ubuntu;
+  font-size: 40px;
+  transition: 0.5s; }
+  .banner-down img {
+    width: 50px;
+    height: auto; }
+
+.connection-manual {
+  text-align: right;
+  margin-bottom: 65px; }
+
+.connection-link {
+  font-family: Ubuntu;
+  color: #DF362F;
+  font-size: 25px; }
+
+.webinar-content h2 {
+  text-align: center;
+  font-family: UbuntuBold;
+  color: #DF362F;
+  font-size: 42px;
+  margin-bottom: 50px; }
+  .webinar-content h2 img {
+    vertical-align: middle; }
+  .webinar-content h2 span {
+    vertical-align: middle;
+    margin-left: 20px; }
+
+.webinar-content h3 {
+  margin-top: 30px;
+  font-family: UbuntuBold;
+  color: #DF362F;
+  font-size: 25px; }
+
+.webinar-content p {
+  margin-top: 18px;
+  margin-bottom: 55px;
+  font-family: UbuntuLight;
+  font-size: 23px;
+  line-height: 1.3; }
+
+.webinar-content .theme-list {
+  list-style-image: url("../img/list-arrow.png");
+  list-style-position: inside;
+  margin-bottom: 50px; }
+  .webinar-content .theme-list li {
+    font-family: UbuntuLight;
+    font-size: 23px;
+    line-height: 1.3; }
+
+.speaker-img {
+  float: right;
+  width: 30%;
+  height: auto;
+  margin-left: 15px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px; }
+
+.divide-line {
+  background-color: #DF362F;
+  height: 5px;
+  width: 40px;
+  margin-top: 7px; }
+
+.register-section {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid #cccccc; }
+  .register-section a {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Ubuntu;
+    color: white;
+    padding: 15px 60px;
+    border-radius: 30px;
+    background-color: #DF362F; }
+
+.speaker-hidden {
+  display: none; }
+
+.webinar-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 20px; }
+
+.takeda-info {
+  text-align: center; }
+  .takeda-info p {
+    font-size: 15px;
+    font-family: UbuntuLight;
+    margin: 0; }
+
+.webinar-footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .webinar-footer-contacts .contact-phone {
+    margin-left: 5px;
+    text-decoration: none;
+    font-family: UbuntuBold;
+    font-size: 22px;
+    color: black; }
+  .webinar-footer-contacts .call-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #df362f;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 15px; }
+
+.header-menu {
+  position: absolute;
+  top: -84px;
+  right: 15px;
+  background-color: #af4845;
+  height: 53px;
+  width: 54px;
+  padding: 16px 17px;
+  margin-left: 12px;
+  z-index: 2;
+  display: none; }
+
+.header-menu:hover {
+  cursor: pointer; }
+
+.header-menu__line {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  border-radius: 2px; }
+
+.header-menu__lines {
+  transition: all 0.4s;
+  transition-timing-function: linear; }
+
+.header-menu__lines-rotate {
+  transform: rotate(90deg); }
+
+.hidden-menu {
+  position: absolute;
+  background-color: #a63e3a;
+  z-index: 1;
+  top: -84px;
+  right: 15px;
+  display: none;
+  padding-bottom: 10px;
+  max-width: 460px;
+  box-shadow: 10px 0 79px 0 rgba(53, 53, 53, 0.38); }
+
+.hidden-menu__show {
+  display: none; }
+
+.hidden-menu-links {
+  list-style: none; }
+  .hidden-menu-links li {
+    /*display: inline-table;*/
+    text-align: left;
+    margin: 0; }
+    .hidden-menu-links li a {
+      padding-left: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 30px;
+      display: block;
+      text-decoration: none;
+      font-family: ubuntu;
+      font-size: 20px;
+      color: white; }
+    .hidden-menu-links li a:hover {
+      background-color: #DF362F;
+      color: white; }
+
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10000; }
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  background: rgba(43, 46, 56, 0.9);
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px; }
+
+.modal-register {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  margin-top: -300px;
+  max-width: 550px;
+  width: 60%;
+  background-color: white;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 40px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px; }
+  .modal-register .close__modal {
+    position: absolute;
+    right: -30px;
+    top: -20px;
+    width: 61px;
+    height: 51px;
+    font-size: 21px;
+    background-image: url("../img/close_button.png");
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding-top: 15px; }
+  .modal-register .modal-register__register {
+    font-family: Ubuntu;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 25px; }
+  .modal-register h4 {
+    font-family: Ubuntu;
+    font-size: 24px;
+    color: #df362f;
+    margin-bottom: 25px; }
+  .modal-register .modal-register__date {
+    font-family: Ubuntu;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 25px; }
+  .modal-register .input__email {
+    font-family: Ubuntu;
+    font-size: 24px;
+    color: black;
+    height: 45px;
+    max-width: 350px;
+    width: 80%;
+    border: 2px solid grey;
+    border-radius: 22px;
+    padding-left: 22px;
+    margin-bottom: 15px; }
+  .modal-register .submit__email {
+    background-color: #df362f;
+    max-width: 260px;
+    width: 60%;
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-bottom: 25px; }
+
+@media screen and (max-width: 961px) {
+  .takeda-info {
+    max-width: 250px; }
+  .phone-and-button .contact-phone {
+    font-size: 19px;
+    margin-right: 18px; }
+  .phone-and-button .call-button {
+    font-size: 14px;
+    padding: 8px 15px; } }
+
+@media screen and (max-width: 786px) {
+  .webinar-nav-menu .nav-links a {
+    font-size: 14px;
+    padding: 9px 20px; }
+  .webinar-banner-background p {
+    font-size: 25px; }
+  .webinar-banner-background .banner-date {
+    font-size: 35px;
+    margin: 35px 0; }
+  .webinar-banner-background h1 {
+    font-size: 42px; }
+  .webinar-banner-background .webinar-banner-smalltext {
+    font-size: 20px;
+    margin-bottom: 50px; }
+  .connection-link {
+    font-size: 15px; }
+  .connection-manual {
+    margin-bottom: 25px; }
+  .webinar-content h2 {
+    font-size: 30px;
+    margin-bottom: 30px; }
+    .webinar-content h2 span {
+      margin-left: 5px; }
+  .webinar-content h3 {
+    margin-top: 25px;
+    font-size: 22px; }
+  .webinar-content p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.2; }
+  .webinar-content .theme-list {
+    margin-bottom: 30px; }
+    .webinar-content .theme-list li {
+      font-size: 17px;
+      line-height: 1.2; }
+  .register-section {
+    padding: 50px 0; }
+  .takeda-info p {
+    font-size: 13px; } }
+
+@media screen and (max-width: 670px) {
+  .takeda-info {
+    order: 2;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center; }
+  .speaker-img {
+    /*float:none;
+		width:60%;
+		margin: 0 auto;
+		display:block;*/
+    display: none; }
+  .speaker-hidden {
+    display: block;
+    width: 60%;
+    margin: 0 auto; }
+  .webinar-nav-menu {
+    display: none; }
+  .phone-and-button {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around; }
+    .phone-and-button .contact-phone {
+      margin-right: 0; }
+    .phone-and-button .phone-img {
+      display: none; }
+    .phone-and-button .hidden-phone-img {
+      margin-right: 5px; }
+  .hidden-phone {
+    display: block; }
+  .webinar-banner-smalltext {
+    display: none; }
+  .connection-manual {
+    text-align: center; }
+    .connection-manual a {
+      font-size: 19px; }
+  .header-menu {
+    display: block; }
+  .hidden-menu__show {
+    display: block; }
+  .modal-register {
+    top: 50%;
+    margin-top: -300px;
+    max-width: 90%;
+    width: 90%;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px; }
+    .modal-register .close__modal {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 61px;
+      height: 51px;
+      font-size: 21px;
+      background-image: url("../img/close_button.png"); }
+    .modal-register .modal-register__register {
+      font-size: 18px;
+      margin-bottom: 15px; }
+    .modal-register h4 {
+      font-size: 18px;
+      margin-bottom: 15px; }
+    .modal-register .modal-register__date {
+      font-size: 18px;
+      color: black;
+      margin-bottom: 15px; }
+    .modal-register .input__email {
+      font-size: 18px;
+      height: 30px;
+      max-width: 80%;
+      width: 80%;
+      border: 2px solid grey;
+      border-radius: 15px;
+      padding-left: 15px;
+      margin-bottom: 15px; }
+    .modal-register .submit__email {
+      max-width: 260px;
+      width: 60%;
+      font-size: 15px;
+      border-radius: 20px;
+      padding: 10px 15px;
+      margin-bottom: 15px; } }
+
+@media screen and (max-width: 480px) {
+  .header-logo {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 460px) {
+  .header-logo-block {
+    width: 30%; }
+  .webinar-footer-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: none; }
+  .takeda-info {
+    margin-left: auto;
+    margin-right: auto; }
+  .webinar-footer-contacts {
+    margin-left: auto;
+    margin-right: auto; }
+    .webinar-footer-contacts .call-button {
+      margin-left: auto;
+      margin-right: auto; }
+  .phone-and-button .contact-phone {
+    font-size: 18px; }
+  .webinar-banner-background h1 {
+    font-size: 24px; } }
